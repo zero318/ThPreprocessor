@@ -26,7 +26,8 @@
           "value": "F:/Program Files (x86)/LLVM/bin/llvm-ranlib.exe",
           "type": "FILEPATH"
         }
-      ]
+      ],
+      "intelliSenseMode": "windows-clang-x86"
     },
     {
       "name": "x86-Clang-Release",
@@ -38,7 +39,24 @@
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "clang_cl_x86" ],
-      "variables": []
+      "variables": [
+        {
+          "name": "CMAKE_C_COMPILER",
+          "value": "F:/Program Files (x86)/LLVM/bin/clang-cl.exe",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "CMAKE_C_COMPILER_AR",
+          "value": "F:/Program Files (x86)/LLVM/bin/llvm-ar.exe",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "CMAKE_C_COMPILER_RANLIB",
+          "value": "F:/Program Files (x86)/LLVM/bin/llvm-ranlib.exe",
+          "type": "FILEPATH"
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86"
     },
     {
       "name": "x86-Clang-Release-Debug",
@@ -50,6 +68,40 @@
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "inheritEnvironments": [ "clang_cl_x86" ],
+      "variables": [
+        {
+          "name": "CMAKE_C_COMPILER",
+          "value": "F:/Program Files (x86)/LLVM/bin/clang-cl.exe",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "CMAKE_C_COMPILER_AR",
+          "value": "F:/Program Files (x86)/LLVM/bin/llvm-ar.exe",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "CMAKE_C_COMPILER_RANLIB",
+          "value": "F:/Program Files (x86)/LLVM/bin/llvm-ranlib.exe",
+          "type": "FILEPATH"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
+          "value": "/MD /Zi /O2 /Ob2 /DNDEBUG",
+          "type": "STRING"
+        }
+      ],
+      "intelliSenseMode": "windows-clang-x86"
+    },
+    {
+      "name": "x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
       "variables": []
     }
   ]
